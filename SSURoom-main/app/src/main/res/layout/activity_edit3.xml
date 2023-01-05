@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditActivity3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="리뷰작성"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="50dp"
+        android:text="상세정보"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="구조 *"
+        android:textColor="@color/black"></TextView>
+
+
+    <GridLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="2">
+
+        <RadioGroup
+            android:id="@+id/radiogroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RadioButton
+                android:id="@+id/radiogroup3btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="오픈형\n원룸"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radiogroup3btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="분리형\n원룸"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radiogroup3btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="복층형\n원룸"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radiogroup3btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="투룸"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radiogroup3btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="쓰리룸+"></RadioButton>
+        </RadioGroup>
+    </GridLayout>
+
+
+    <EditText
+        android:id="@+id/area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="면적    (단위: 평)"
+        android:inputType="number"></EditText>
+
+    <EditText
+        android:id="@+id/floor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:hint="층 수   (단위: 층)"
+        android:inputType="number"></EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="옵션 *"
+        android:textColor="@color/black"></TextView>
+
+    <!--화면 전체로 골고루 퍼지게 만들어야함-->
+
+    <GridLayout
+        android:id="@+id/optionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="90dp"
+        android:columnCount="3"
+
+        android:orientation="horizontal"
+        android:rowCount="4">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="싱크대"
+            android:textOn="싱크대"></ToggleButton>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="에어컨"
+            android:textOn="에어컨"></ToggleButton>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="신발장"
+            android:textOn="신발장"></ToggleButton>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="세탁기"
+            android:textOn="세탁기"></ToggleButton>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="냉장고"
+            android:textOn="냉장고"></ToggleButton>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="옷장"
+            android:textOn="옷장"></ToggleButton>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="가스레인지"
+            android:textOn="가스레인지"></ToggleButton>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="인덕션"
+            android:textOn="인덕션"></ToggleButton>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="책상"
+            android:textOn="책상"></ToggleButton>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="침대"
+            android:textOn="침대"></ToggleButton>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="전자레인지"
+            android:textOn="전자레인지"></ToggleButton>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="책장"
+            android:textOn="책장"></ToggleButton>
+    </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ff7f00"
+        android:onClick="clickbtn"
+        android:text="다음 3/5"
+        android:textSize="20dp"
+        android:textStyle="bold"></Button>
+</LinearLayout>
